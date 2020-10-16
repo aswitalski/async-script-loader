@@ -26,12 +26,12 @@
   "homepage": "https://github.com/aswitalski/lazy-module-loader#readme",
   "devDependencies": {
     "assert": "^2.0.0",
-    "decache": "^4.5.1",
+    "decache": "^4.6.0",
     "express": "^4.17.1",
-    "mocha": "^6.2.2",
-    "nyc": "^15.0.0",
+    "mocha": "^6.2.3",
+    "nyc": "^15.1.0",
     "path": "^0.12.7",
     "pre-commit": "^1.2.2",
-    "sinon": "^8.0.2"
+    "sinon": "^9.2.0"
   }
 }
