@@ -5,6 +5,11 @@ Lazy Module Loader is a universal JavaScript module loader allowing to load modu
 [![Build Status](https://travis-ci.org/aswitalski/lazy-module-loader.svg?branch=master)](https://travis-ci.org/aswitalski/lazy-module-loader)
 [![npm version](https://img.shields.io/npm/v/lazy-module-loader.svg?style=flat)](https://www.npmjs.com/package/lazy-module-loader)
 
+## Intention
+
+Lazy Module Loader had been widely used in Opera Desktop browser as a dedicated solution for modularity
+and bundling mechanism for Web UI code before the ES modules were fully supported.
+
 ## Usage
 
 Once the Lazy Module Loader script is loaded, it defines a global `loader` instance, which can be used as follows:
@@ -117,3 +122,14 @@ const plugin = {
 };
 loader.use(plugin);
 ```
+
+## Registry
+
+All the loaded modules are kept in a registry. It is global and can be accessed as follows:
+
+```js
+loader.registry
+```
+
+ The registry is a map allowing to access the module information and easily analyze the dependency graph.
+ Each module can be checked for all its dependencies and clients referencing it.
